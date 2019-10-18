@@ -1,0 +1,71 @@
+- rasa init
+
+___conversation design___ - about potencial users
+write down conversations that the bot's likely have with users
+- wizard of oz approach
+- training data
+
+U: Hello
+B: Hi, I am your travel assistant. I can help you figure out what documents you need before your travels. So, how can I help you?
+U: I am traveling to the US. What documents do I need?
+B: What is your nationality?
+U: I am German
+B: You only need ESTA.
+U: Thanks!
+B: Happy to help. Enjoy your travels.
+
+
+U: What documents do I need to travel to Europe if I am American?
+B: You only need VISA.
+U: Thank you.
+B: Happy to help. Enjoy your travels.
+
+intents:
+--greetings
+--documents
+--info
+--thanks
+
+ensure the training data is good; start with structured examples
+
+entities:
+square brackets+round brackets
+ENTITIES ARE CASE SENSITIVE
+
+___CONFIG.yml___
+
+you can specify anything: https://rasa.com/docs/rasa/nlu/choosing-a-pipeline/
+
+PIPELINE: order matters
+
+Intent CONFIDENCE: 0 > 0.5 > 0.7 > 0.9 > 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

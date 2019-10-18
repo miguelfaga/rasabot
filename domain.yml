@@ -1,0 +1,26 @@
+intents:
+- greet
+- document_query
+- inform
+- thanks
+entities:
+- destination
+- departure
+slots:
+  destination:
+    type: text
+  departure:
+    type: text
+templates:
+  utter_greet:
+  - text: Hi, I am your travel assistant. I can help you figure out what documents you need before your travels. So, how can I help you?
+  utter_ask_nacionality:
+  - text: What is your nationality?
+  utter_welcome:
+  - text: Happy to help. Enjoy your travels.
+  - text: Great, goodbye.
+actions:
+- utter_greet
+- utter_ask_nacionality
+- utter_welcome
+- action_check_docs
